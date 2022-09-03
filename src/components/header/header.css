@@ -1,0 +1,90 @@
+header {
+  height: 100vh;
+  padding-top: 3rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* ------------ CTA --------------- */
+.cta {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* ------------- Header socials -------------- */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+.info {
+  height: 30vh;
+  padding: 3rem 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Typewriter__wrapper {
+  color: var(--color-primary);
+}
+
+.info p {
+  color: var(--color-primary);
+}
+
+/* ----------------- Scroll Down -------------- */
+.scroll__down {
+  position: absolute;
+  right: 0rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+/* ----------------------- Media quieries (medium devices) --------------- */
+
+@media screen and (max-width: 1024px) {
+  header {
+    /* height: 50vh; */
+  }
+}
+
+/* ------------------------ media quiereis (small devies) --------------------*/
+@media screen and (max-width: 600px) {
+  header {
+    /* height: 100vh; */
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+
+  .info {
+    margin-top: 2rem;
+    padding: 3rem 0rem;
+  }
+}
