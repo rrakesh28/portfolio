@@ -25,7 +25,7 @@ const Portfolio = () => {
               Github
             </a>
             <a
-              href="cloudkakshaa.org"
+              href="https://cloudkakshaa.org"
               target="_blank"
               className="btn btn-primary"
             >
